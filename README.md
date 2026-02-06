@@ -1,9 +1,11 @@
-# Cybership Carrier Integration Service
+# Carrier Integration Service
 
-> **Take-Home Assessment** — A carrier integration service that wraps the UPS Rating API to
+>A carrier integration service that wraps the UPS Rating API to
 > fetch live shipping rates. Built in TypeScript with a pluggable architecture
 > so additional carriers (FedEx, USPS, DHL) and operations (labels, tracking)
 > can be added without modifying existing code.
+>
+> **Repository:** [github.com/lalitkumarjangid/Carrier-Integration-Service](https://github.com/lalitkumarjangid/Carrier-Integration-Service)
 
 ---
 
@@ -53,7 +55,7 @@ chmod +x run.sh
 ## Project Structure
 
 ```
-cybership-carrier-integration-service/
+carrier-integration-service/
 ├── src/
 │   ├── carriers/                        # Carrier implementations
 │   │   ├── carrier.interface.ts         # CarrierProvider contract
