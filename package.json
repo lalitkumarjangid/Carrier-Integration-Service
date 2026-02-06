@@ -1,0 +1,38 @@
+{
+  "name": "cybership-carrier-integration-service",
+  "version": "1.0.0",
+  "description": "Shipping carrier integration service - wraps UPS Rating API with extensible architecture for additional carriers",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "typecheck": "tsc --noEmit",
+    "demo": "ts-node src/demo.ts"
+  },
+  "keywords": [
+    "shipping",
+    "carrier",
+    "ups",
+    "rating",
+    "integration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@vitest/coverage-v8": "3.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1"
+  }
+}
