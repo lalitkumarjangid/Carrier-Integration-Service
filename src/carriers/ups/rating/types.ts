@@ -1,10 +1,3 @@
-// ─── UPS Rating API Types ─────────────────────────────────────────────
-// These types mirror the UPS Rating API request/response shapes.
-// They are INTERNAL to the UPS carrier module — callers never see these.
-// Based on: https://developer.ups.com/tag/Rating?loc=en_US
-
-// ─── Request Types ───────────────────────────────────────────────────
-
 export interface UpsRateRequest {
   RateRequest: {
     Request: {
@@ -98,7 +91,6 @@ export interface UpsPackage {
   };
 }
 
-// ─── Response Types ──────────────────────────────────────────────────
 
 export interface UpsRateResponse {
   RateResponse: {
@@ -189,8 +181,6 @@ export interface UpsRatedPackage {
     Weight: string;
   };
 }
-
-// ─── Error Response ──────────────────────────────────────────────────
 
 export interface UpsErrorResponse {
   response: {

@@ -71,8 +71,6 @@ export class CarrierError extends Error {
   }
 }
 
-// ─── Factory functions for common error scenarios ─────────────────────
-
 export function authError(carrier: CarrierId, message: string, httpStatus?: number): CarrierError {
   return new CarrierError({
     code: CarrierErrorCode.AUTH_FAILED,

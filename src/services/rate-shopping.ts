@@ -1,8 +1,3 @@
-// ─── Rate Shopping Service ─────────────────────────────────────────────
-// Top-level service that callers use to get rate quotes.
-// Coordinates across multiple carriers, validates input, and returns
-// normalized, sorted results. The caller never touches carrier-specific code.
-
 import { RateRequest, RateResponse, RateQuote } from '../types/rate';
 import { CarrierId } from '../types/common';
 import { CarrierRegistry } from '../carriers/registry';

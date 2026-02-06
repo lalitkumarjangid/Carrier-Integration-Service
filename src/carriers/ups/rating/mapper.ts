@@ -1,8 +1,3 @@
-// ─── UPS Rating Mappers ───────────────────────────────────────────────
-// Bidirectional mapping between carrier-agnostic domain models and
-// UPS-specific API shapes. This is the boundary layer — all UPS
-// specifics are contained here.
-
 import { Address } from '../../../types/address';
 import { Package, PackagingType } from '../../../types/package';
 import { RateRequest, RateQuote, Surcharge } from '../../../types/rate';
@@ -14,10 +9,6 @@ import {
   UpsPackage,
   UpsItemizedCharge,
 } from './types';
-
-// ─── Service Code Mappings ───────────────────────────────────────────
-// Maps between UPS service codes and our carrier-agnostic service levels.
-// Reference: UPS Service Code listing from Rating API appendix.
 
 const UPS_SERVICE_CODE_TO_LEVEL: Record<string, ServiceLevel> = {
   '01': 'NEXT_DAY_AIR',
@@ -64,8 +55,6 @@ const UPS_SERVICE_NAMES: Record<string, string> = {
   '65': 'UPS Worldwide Saver',
 };
 
-// ─── Packaging Type Mappings ─────────────────────────────────────────
-
 const PACKAGING_TYPE_TO_UPS: Record<PackagingType, string> = {
   CUSTOM: '02',        // Customer Supplied Package
   LETTER: '01',        // UPS Letter
@@ -75,8 +64,6 @@ const PACKAGING_TYPE_TO_UPS: Record<PackagingType, string> = {
   MEDIUM_BOX: '22',    // UPS Express Medium Box
   LARGE_BOX: '25',     // UPS Express Large Box
 };
-
-// ─── Request Mapping ─────────────────────────────────────────────────
 
 /**
  * Map a domain RateRequest into a UPS-specific RateRequest payload.
@@ -190,8 +177,6 @@ function mapToUpsPackage(pkg: Package): UpsPackage {
 
   return upsPackage;
 }
-
-// ─── Response Mapping ────────────────────────────────────────────────
 
 /**
  * Map a UPS RatedShipment into a normalized RateQuote.

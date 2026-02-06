@@ -1,6 +1,3 @@
-// ─── Common Types ─────────────────────────────────────────────────────
-// Shared enumerations and types used across the domain.
-
 /** Carrier-agnostic service levels */
 export type ServiceLevel =
   | 'GROUND'

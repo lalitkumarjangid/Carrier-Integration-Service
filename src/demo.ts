@@ -1,8 +1,3 @@
-// ─── Demo: CLI example showing how to use the service ─────────────────
-// This file demonstrates usage without needing a real API key.
-// It's meant to show the API surface; in production, you would have
-// real credentials configured via environment variables.
-
 import { RateRequest, RateShoppingService, CarrierRegistry, UpsCarrier } from './index';
 
 async function main(): Promise<void> {

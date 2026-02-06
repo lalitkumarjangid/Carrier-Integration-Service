@@ -1,7 +1,3 @@
-// ─── Cybership Carrier Integration Service ────────────────────────────
-// Main entry point and factory for the rate shopping service.
-// Sets up configuration, registers carriers, and exposes the service.
-
 export * from './types';
 export * from './errors';
 export * from './carriers';

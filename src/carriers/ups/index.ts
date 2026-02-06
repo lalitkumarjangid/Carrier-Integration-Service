@@ -1,9 +1,3 @@
-// ─── UPS Carrier Provider ─────────────────────────────────────────────
-// Concrete implementation of CarrierProvider for UPS.
-// Wires together auth, HTTP client, and individual operations (rating, etc.).
-// Adding a new UPS operation (e.g., label purchase) means adding an
-// operation class and exposing it here — no other files change.
-
 import { CarrierProvider, CarrierOperation } from '../carrier.interface';
 import { CarrierId } from '../../types/common';
 import { RateRequest, RateQuote } from '../../types/rate';

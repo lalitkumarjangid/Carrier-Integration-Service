@@ -1,7 +1,3 @@
-// ─── UPS Rating Operation ─────────────────────────────────────────────
-// Encapsulates the UPS Rate/Shop API call.
-// Handles request mapping, API call, and response normalization.
-
 import { RateRequest, RateQuote } from '../../../types/rate';
 import { UpsHttpClient } from '../client';
 import { UpsRateResponse } from './types';

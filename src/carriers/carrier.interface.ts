@@ -1,8 +1,3 @@
-// ─── Carrier Interface ────────────────────────────────────────────────
-// This is the core abstraction. Every carrier (UPS, FedEx, USPS, DHL)
-// implements this interface. Adding a new carrier means implementing
-// CarrierProvider and registering it — no existing code changes needed.
-
 import { CarrierId } from '../types/common';
 import { RateRequest, RateQuote } from '../types/rate';
 

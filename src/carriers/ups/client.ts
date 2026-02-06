@@ -1,7 +1,3 @@
-// ─── UPS HTTP Client ──────────────────────────────────────────────────
-// Thin wrapper around axios for UPS API calls.
-// Handles auth header injection, retries on 401, and error classification.
-
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { UpsAuthManager } from './auth';
 import {
